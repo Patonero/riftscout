@@ -1,0 +1,138 @@
+.rb-elo-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.375rem;
+  border: 1px solid;
+  padding: 0.125rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Dark theme (locator.riftbound.uvsgames.com's navy background) — light,
+   desaturated colors that read well on a dark surface. */
+.rb-elo-badge.rb-theme-dark.rb-elo-high {
+  color: #4ade80;
+  border-color: #4ade80;
+  background: rgba(74, 222, 128, 0.1);
+}
+
+.rb-elo-badge.rb-theme-dark.rb-elo-mid {
+  color: #facc15;
+  border-color: #facc15;
+  background: rgba(250, 204, 21, 0.1);
+}
+
+.rb-elo-badge.rb-theme-dark.rb-elo-low {
+  color: #9ca3af;
+  border-color: #9ca3af;
+  background: rgba(156, 163, 175, 0.1);
+}
+
+.rb-elo-badge.rb-theme-dark.rb-elo-guess {
+  color: #c084fc;
+  border-color: #c084fc;
+  border-style: dashed;
+  background: rgba(192, 132, 252, 0.1);
+}
+
+.rb-elo-badge.rb-theme-dark.rb-elo-unknown {
+  color: #9ca3af;
+  border-color: #9ca3af;
+  border-style: dashed;
+  background: transparent;
+}
+
+/* Light theme (playriftbound.com's white background) — the dark-theme
+   palette above is a set of light pastel colors that fail contrast on
+   white, so this uses darker, more saturated shades of the same hues. */
+.rb-elo-badge.rb-theme-light.rb-elo-high {
+  color: #15803d;
+  border-color: #16a34a;
+  background: rgba(22, 163, 74, 0.12);
+}
+
+.rb-elo-badge.rb-theme-light.rb-elo-mid {
+  color: #92400e;
+  border-color: #d97706;
+  background: rgba(217, 119, 6, 0.12);
+}
+
+.rb-elo-badge.rb-theme-light.rb-elo-low {
+  color: #4b5563;
+  border-color: #6b7280;
+  background: rgba(107, 114, 128, 0.12);
+}
+
+.rb-elo-badge.rb-theme-light.rb-elo-guess {
+  color: #7c3aed;
+  border-color: #8b5cf6;
+  border-style: dashed;
+  background: rgba(139, 92, 246, 0.12);
+}
+
+.rb-elo-badge.rb-theme-light.rb-elo-unknown {
+  color: #4b5563;
+  border-color: #9ca3af;
+  border-style: dashed;
+  background: transparent;
+}
+
+.rb-elo-button {
+  margin-left: 0.5rem;
+}
+
+/* Wraps the "ROSTER (N)" heading on the locator site so the button can sit
+   right-aligned across from it — see getButtonAnchor in content.js. */
+.rb-elo-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+/* Only applied when no site button was available to borrow styling from
+   (see getReferenceButton in content.js) — sites that do provide one keep
+   looking native instead of getting these opinionated defaults layered on
+   top of their own classes. Uses RiftScout's own orange accent so the
+   action reads as a distinct, branded feature rather than site chrome. */
+.rb-elo-button.rb-elo-button-default {
+  margin-left: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  border: 1px solid #f97316;
+  background: #1f2937;
+  color: #f3f4f6;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.rb-elo-button.rb-elo-button-default:hover {
+  background: #f97316;
+  color: #1f2937;
+}
+
+.rb-elo-button.rb-elo-button-default:disabled {
+  opacity: 0.6;
+  cursor: default;
+  background: #1f2937;
+  color: #f3f4f6;
+}
+
+.rb-elo-error {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+}
+
+.rb-elo-error.rb-theme-dark {
+  color: #f87171;
+}
+
+.rb-elo-error.rb-theme-light {
+  color: #b91c1c;
+}
