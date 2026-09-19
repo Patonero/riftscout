@@ -9,16 +9,16 @@ A Chrome extension that shows each player's [eloshowdown.com](https://eloshowdow
 
 This isn't on the Chrome Web Store yet, so it installs the same way any "developer" extension does — by loading the folder directly. It's totally safe, just an extra step Chrome requires for extensions from outside the Store.
 
-1. **Download the code**
-   - Click the green **`<> Code`** button on [this repo's GitHub page](https://github.com/Patonero/riftscout) → **Download ZIP**.
-   - Find the downloaded `riftscout-master.zip` in your Downloads folder and **unzip it** (right-click → Extract All on Windows, or double-click on Mac). Remember where you put the unzipped folder — you'll need it in step 4.
+1. **Download the extension**
+   - Go to the [**Releases** page](https://github.com/Patonero/riftscout/releases/latest) and download the `riftscout-vX.Y.Z.zip` file under **Assets**.
+   - **Unzip it** (right-click → Extract All on Windows, or double-click on Mac). You'll get a `riftscout` folder — remember where you put it, you'll need it in step 4.
 2. **Open Chrome's extensions page**
    - Go to `chrome://extensions` (paste that into your address bar).
 3. **Turn on Developer mode**
    - Flip the **Developer mode** toggle in the top-right corner of that page.
 4. **Load the extension**
    - Click **Load unpacked**.
-   - Select the unzipped `riftscout-master` folder (the one containing `manifest.json`).
+   - Select the unzipped `riftscout` folder (the one containing `manifest.json`).
    - RiftScout should now appear in your extensions list.
 
 That's it — no restart needed.
@@ -34,7 +34,7 @@ That's it — no restart needed.
 
 ## Getting updates
 
-Since this installs from a downloaded folder rather than the Chrome Web Store, it won't auto-update. When the extension changes, repeat the **Download ZIP** step above with the latest code, then go to `chrome://extensions` and click the reload icon (⟳) on RiftScout's card — no need to remove and re-add it.
+Since this installs from a downloaded folder rather than the Chrome Web Store, it won't auto-update. When a new version comes out, download the latest zip from [Releases](https://github.com/Patonero/riftscout/releases/latest), unzip it over the old `riftscout` folder, then go to `chrome://extensions` and click the reload icon (⟳) on RiftScout's card — no need to remove and re-add it.
 
 ## Privacy
 
