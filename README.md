@@ -25,7 +25,7 @@ That's it — no restart needed.
 
 ## Using it
 
-1. Open any event page on either supported site (e.g. `https://locator.riftbound.uvsgames.com/events/648769` or a `playriftbound.com` event).
+1. Open any event page on either supported site (e.g. `https://locator.riftbound.uvsgames.com/events` or a `playriftbound.com` event).
 2. Find the roster / "Registered Players" list.
 3. Click **Scout ELOs**.
 4. Each player gets a colored badge with their ELO:
